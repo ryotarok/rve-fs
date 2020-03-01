@@ -1,0 +1,35 @@
+
+obj/callee_O3.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_func_arg0:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	b8 00 10 00 00 	movl	$4096, %eax
+       9:	5d 	popq	%rbp
+       a:	c3 	retq
+       b:	0f 1f 44 00 00 	nopl	(%rax,%rax)
+
+_func_arg1:
+      10:	55 	pushq	%rbp
+      11:	48 89 e5 	movq	%rsp, %rbp
+      14:	8d 87 00 10 00 00 	leal	4096(%rdi), %eax
+      1a:	5d 	popq	%rbp
+      1b:	c3 	retq
+      1c:	0f 1f 40 00 	nopl	(%rax)
+
+_func_arg2:
+      20:	55 	pushq	%rbp
+      21:	48 89 e5 	movq	%rsp, %rbp
+      24:	8d 84 37 00 10 00 00 	leal	4096(%rdi,%rsi), %eax
+      2b:	5d 	popq	%rbp
+      2c:	c3 	retq
+      2d:	0f 1f 00 	nopl	(%rax)
+
+_func_arg3:
+      30:	55 	pushq	%rbp
+      31:	48 89 e5 	movq	%rsp, %rbp
+      34:	01 f7 	addl	%esi, %edi
+      36:	8d 84 3a 00 10 00 00 	leal	4096(%rdx,%rdi), %eax
+      3d:	5d 	popq	%rbp
+      3e:	c3 	retq

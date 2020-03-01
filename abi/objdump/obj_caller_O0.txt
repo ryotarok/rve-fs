@@ -1,0 +1,73 @@
+
+obj/caller_O0.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_caller0:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	48 83 ec 10 	subq	$16, %rsp
+       8:	e8 00 00 00 00 	callq	0 <_caller0+0xd>
+       d:	89 45 fc 	movl	%eax, -4(%rbp)
+      10:	8b 75 fc 	movl	-4(%rbp), %esi
+      13:	48 8d 3d bf 00 00 00 	leaq	191(%rip), %rdi
+      1a:	b0 00 	movb	$0, %al
+      1c:	e8 00 00 00 00 	callq	0 <_caller0+0x21>
+      21:	89 45 f8 	movl	%eax, -8(%rbp)
+      24:	48 83 c4 10 	addq	$16, %rsp
+      28:	5d 	popq	%rbp
+      29:	c3 	retq
+      2a:	66 0f 1f 44 00 00 	nopw	(%rax,%rax)
+
+_caller1:
+      30:	55 	pushq	%rbp
+      31:	48 89 e5 	movq	%rsp, %rbp
+      34:	48 83 ec 10 	subq	$16, %rsp
+      38:	bf 12 11 11 11 	movl	$286331154, %edi
+      3d:	e8 00 00 00 00 	callq	0 <_caller1+0x12>
+      42:	89 45 fc 	movl	%eax, -4(%rbp)
+      45:	8b 75 fc 	movl	-4(%rbp), %esi
+      48:	48 8d 3d 9b 00 00 00 	leaq	155(%rip), %rdi
+      4f:	b0 00 	movb	$0, %al
+      51:	e8 00 00 00 00 	callq	0 <_caller1+0x26>
+      56:	89 45 f8 	movl	%eax, -8(%rbp)
+      59:	48 83 c4 10 	addq	$16, %rsp
+      5d:	5d 	popq	%rbp
+      5e:	c3 	retq
+      5f:	90 	nop
+
+_caller2:
+      60:	55 	pushq	%rbp
+      61:	48 89 e5 	movq	%rsp, %rbp
+      64:	48 83 ec 10 	subq	$16, %rsp
+      68:	bf 12 11 11 11 	movl	$286331154, %edi
+      6d:	be 23 22 22 22 	movl	$572662307, %esi
+      72:	e8 00 00 00 00 	callq	0 <_caller2+0x17>
+      77:	89 45 fc 	movl	%eax, -4(%rbp)
+      7a:	8b 75 fc 	movl	-4(%rbp), %esi
+      7d:	48 8d 3d 81 00 00 00 	leaq	129(%rip), %rdi
+      84:	b0 00 	movb	$0, %al
+      86:	e8 00 00 00 00 	callq	0 <_caller2+0x2b>
+      8b:	89 45 f8 	movl	%eax, -8(%rbp)
+      8e:	48 83 c4 10 	addq	$16, %rsp
+      92:	5d 	popq	%rbp
+      93:	c3 	retq
+      94:	66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+      9e:	66 90 	nop
+
+_caller3:
+      a0:	55 	pushq	%rbp
+      a1:	48 89 e5 	movq	%rsp, %rbp
+      a4:	48 83 ec 10 	subq	$16, %rsp
+      a8:	bf 12 11 11 11 	movl	$286331154, %edi
+      ad:	be 23 22 22 22 	movl	$572662307, %esi
+      b2:	ba 34 33 33 33 	movl	$858993460, %edx
+      b7:	e8 00 00 00 00 	callq	0 <_caller3+0x1c>
+      bc:	89 45 fc 	movl	%eax, -4(%rbp)
+      bf:	8b 75 fc 	movl	-4(%rbp), %esi
+      c2:	48 8d 3d 63 00 00 00 	leaq	99(%rip), %rdi
+      c9:	b0 00 	movb	$0, %al
+      cb:	e8 00 00 00 00 	callq	0 <_caller3+0x30>
+      d0:	89 45 f8 	movl	%eax, -8(%rbp)
+      d3:	48 83 c4 10 	addq	$16, %rsp
+      d7:	5d 	popq	%rbp
+      d8:	c3 	retq

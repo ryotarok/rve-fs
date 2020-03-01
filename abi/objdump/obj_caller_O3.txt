@@ -1,0 +1,53 @@
+
+obj/caller_O3.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_caller0:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	e8 00 00 00 00 	callq	0 <_caller0+0x9>
+       9:	48 8d 3d 89 00 00 00 	leaq	137(%rip), %rdi
+      10:	89 c6 	movl	%eax, %esi
+      12:	31 c0 	xorl	%eax, %eax
+      14:	5d 	popq	%rbp
+      15:	e9 00 00 00 00 	jmp	0 <_caller0+0x1a>
+      1a:	66 0f 1f 44 00 00 	nopw	(%rax,%rax)
+
+_caller1:
+      20:	55 	pushq	%rbp
+      21:	48 89 e5 	movq	%rsp, %rbp
+      24:	bf 12 11 11 11 	movl	$286331154, %edi
+      29:	e8 00 00 00 00 	callq	0 <_caller1+0xe>
+      2e:	48 8d 3d 75 00 00 00 	leaq	117(%rip), %rdi
+      35:	89 c6 	movl	%eax, %esi
+      37:	31 c0 	xorl	%eax, %eax
+      39:	5d 	popq	%rbp
+      3a:	e9 00 00 00 00 	jmp	0 <_caller1+0x1f>
+      3f:	90 	nop
+
+_caller2:
+      40:	55 	pushq	%rbp
+      41:	48 89 e5 	movq	%rsp, %rbp
+      44:	bf 12 11 11 11 	movl	$286331154, %edi
+      49:	be 23 22 22 22 	movl	$572662307, %esi
+      4e:	e8 00 00 00 00 	callq	0 <_caller2+0x13>
+      53:	48 8d 3d 6b 00 00 00 	leaq	107(%rip), %rdi
+      5a:	89 c6 	movl	%eax, %esi
+      5c:	31 c0 	xorl	%eax, %eax
+      5e:	5d 	popq	%rbp
+      5f:	e9 00 00 00 00 	jmp	0 <_caller2+0x24>
+      64:	66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+      6e:	66 90 	nop
+
+_caller3:
+      70:	55 	pushq	%rbp
+      71:	48 89 e5 	movq	%rsp, %rbp
+      74:	bf 12 11 11 11 	movl	$286331154, %edi
+      79:	be 23 22 22 22 	movl	$572662307, %esi
+      7e:	ba 34 33 33 33 	movl	$858993460, %edx
+      83:	e8 00 00 00 00 	callq	0 <_caller3+0x18>
+      88:	48 8d 3d 5d 00 00 00 	leaq	93(%rip), %rdi
+      8f:	89 c6 	movl	%eax, %esi
+      91:	31 c0 	xorl	%eax, %eax
+      93:	5d 	popq	%rbp
+      94:	e9 00 00 00 00 	jmp	0 <_caller3+0x29>

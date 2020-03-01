@@ -1,0 +1,56 @@
+
+obj/callee_O0.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_func_arg0:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	c7 45 fc 00 08 00 00 	movl	$2048, -4(%rbp)
+       b:	8b 45 fc 	movl	-4(%rbp), %eax
+       e:	c1 e0 01 	shll	$1, %eax
+      11:	89 45 fc 	movl	%eax, -4(%rbp)
+      14:	8b 45 fc 	movl	-4(%rbp), %eax
+      17:	5d 	popq	%rbp
+      18:	c3 	retq
+      19:	0f 1f 80 00 00 00 00 	nopl	(%rax)
+
+_func_arg1:
+      20:	55 	pushq	%rbp
+      21:	48 89 e5 	movq	%rsp, %rbp
+      24:	89 7d fc 	movl	%edi, -4(%rbp)
+      27:	8b 7d fc 	movl	-4(%rbp), %edi
+      2a:	81 c7 00 10 00 00 	addl	$4096, %edi
+      30:	89 7d f8 	movl	%edi, -8(%rbp)
+      33:	8b 45 f8 	movl	-8(%rbp), %eax
+      36:	5d 	popq	%rbp
+      37:	c3 	retq
+      38:	0f 1f 84 00 00 00 00 00 	nopl	(%rax,%rax)
+
+_func_arg2:
+      40:	55 	pushq	%rbp
+      41:	48 89 e5 	movq	%rsp, %rbp
+      44:	89 7d fc 	movl	%edi, -4(%rbp)
+      47:	89 75 f8 	movl	%esi, -8(%rbp)
+      4a:	8b 75 fc 	movl	-4(%rbp), %esi
+      4d:	81 c6 00 10 00 00 	addl	$4096, %esi
+      53:	03 75 f8 	addl	-8(%rbp), %esi
+      56:	89 75 f4 	movl	%esi, -12(%rbp)
+      59:	8b 45 f4 	movl	-12(%rbp), %eax
+      5c:	5d 	popq	%rbp
+      5d:	c3 	retq
+      5e:	66 90 	nop
+
+_func_arg3:
+      60:	55 	pushq	%rbp
+      61:	48 89 e5 	movq	%rsp, %rbp
+      64:	89 7d fc 	movl	%edi, -4(%rbp)
+      67:	89 75 f8 	movl	%esi, -8(%rbp)
+      6a:	89 55 f4 	movl	%edx, -12(%rbp)
+      6d:	8b 55 fc 	movl	-4(%rbp), %edx
+      70:	81 c2 00 10 00 00 	addl	$4096, %edx
+      76:	03 55 f8 	addl	-8(%rbp), %edx
+      79:	03 55 f4 	addl	-12(%rbp), %edx
+      7c:	89 55 f0 	movl	%edx, -16(%rbp)
+      7f:	8b 45 f0 	movl	-16(%rbp), %eax
+      82:	5d 	popq	%rbp
+      83:	c3 	retq

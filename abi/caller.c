@@ -11,16 +11,16 @@ void caller0(void) {
 }
 
 void caller1(void) {
-    int a = func_arg1(16);
-    printf("func_arg1(16): %d\n", a);
+    int a = func_arg1(0x11111112);
+    printf("func_arg1(0x11111112): %d\n", a);
 }
 
 void caller2(void) {
-    int a = func_arg2(32, 64);
-    printf("func_arg2(32, 64): %d\n", a);
+    int a = func_arg2(0x11111112, 0x22222223);
+    printf("func_arg2(0x11111112, 0x22222223): %d\n", a);
 }
 
 void caller3(void) {
-    int a = func_arg3(128, 256, 512);
-    printf("func_arg3(128, 256, 512): %d\n", a);
+    int a = func_arg3(0x11111112, 0x22222223, 0x33333334);
+    printf("func_arg3(0x11111112, 0x22222223, 0x33333334): %d\n", a);
 }
