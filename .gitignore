@@ -9,6 +9,6 @@ hand-asm/bin/exe_*
 # hand-asm/objdump/*.txt
 hand-asm/asm2_O0.S
 
-# jitc
-jitc/bin/*
-jitc/*.o
+# codegen
+codegen/bin/*
+# codegen/objdump/*.txt
