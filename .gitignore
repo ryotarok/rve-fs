@@ -1,4 +1,14 @@
+# abi
 abi/asm/*.S
 abi/obj/*.o
 abi/bin/*
 # abi/objdump/*.txt
+
+# hand-asm
+hand-asm/bin/exe_*
+# hand-asm/objdump/*.txt
+hand-asm/asm2_O0.S
+
+# jitc
+jitc/bin/*
+jitc/*.o
