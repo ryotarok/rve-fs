@@ -1,0 +1,84 @@
+
+a.out:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <DUMMY-0x6>:
+   0:	036000ef          	jal	ra,36 <main>
+   4:	0001                	nop
+
+0000000000000006 <DUMMY>:
+   6:	0001                	nop
+   8:	bffd                	j	6 <DUMMY>
+   a:	0000                	unimp
+	...
+
+000000000000000e <test>:
+   e:	1101                	addi	sp,sp,-32
+  10:	ec22                	sd	s0,24(sp)
+  12:	1000                	addi	s0,sp,32
+  14:	87aa                	mv	a5,a0
+  16:	872e                	mv	a4,a1
+  18:	fef42623          	sw	a5,-20(s0)
+  1c:	87ba                	mv	a5,a4
+  1e:	fef42423          	sw	a5,-24(s0)
+  22:	fec42703          	lw	a4,-20(s0)
+  26:	fe842783          	lw	a5,-24(s0)
+  2a:	9fb9                	addw	a5,a5,a4
+  2c:	2781                	sext.w	a5,a5
+  2e:	853e                	mv	a0,a5
+  30:	6462                	ld	s0,24(sp)
+  32:	6105                	addi	sp,sp,32
+  34:	8082                	ret
+
+0000000000000036 <main>:
+  36:	1141                	addi	sp,sp,-16
+  38:	e406                	sd	ra,8(sp)
+  3a:	e022                	sd	s0,0(sp)
+  3c:	0800                	addi	s0,sp,16
+  3e:	458d                	li	a1,3
+  40:	4505                	li	a0,1
+  42:	fcdff0ef          	jal	ra,e <test>
+  46:	4781                	li	a5,0
+  48:	853e                	mv	a0,a5
+  4a:	60a2                	ld	ra,8(sp)
+  4c:	6402                	ld	s0,0(sp)
+  4e:	0141                	addi	sp,sp,16
+  50:	8082                	ret
+
+Disassembly of section .riscv.attributes:
+
+0000000000000000 <.riscv.attributes>:
+   0:	3441                	addiw	s0,s0,-16
+   2:	0000                	unimp
+   4:	7200                	ld	s0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <test+0x6>
+   c:	002a                	c.slli	zero,0xa
+   e:	0000                	unimp
+  10:	1004                	addi	s1,sp,32
+  12:	7205                	lui	tp,0xfffe1
+  14:	3676                	fld	fa2,376(sp)
+  16:	6934                	ld	a3,80(a0)
+  18:	7032                	0x7032
+  1a:	5f30                	lw	a2,120(a4)
+  1c:	326d                	addiw	tp,tp,-5
+  1e:	3070                	fld	fa2,224(s0)
+  20:	615f 7032 5f30      	0x5f307032615f
+  26:	3266                	fld	ft4,120(sp)
+  28:	3070                	fld	fa2,224(s0)
+  2a:	645f 7032 5f30      	0x5f307032645f
+  30:	30703263          	0x30703263
+	...
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+   0:	3a434347          	fmsub.d	ft6,ft6,ft4,ft7,rmm
+   4:	2820                	fld	fs0,80(s0)
+   6:	29554e47          	fmsub.s	ft8,fa0,fs5,ft5,rmm
+   a:	3920                	fld	fs0,112(a0)
+   c:	322e                	fld	ft4,232(sp)
+   e:	302e                	fld	ft0,232(sp)
+	...

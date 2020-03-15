@@ -12,3 +12,8 @@ hand-asm/asm2_O0.S
 # codegen
 codegen/bin/*
 # codegen/objdump/*.txt
+
+# riscv-bin
+riscv-bin/**/*.o
+riscv-bin/**/*.out
+riscv-bin/**/*.out.bin
